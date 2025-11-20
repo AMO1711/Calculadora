@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/visualizador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="50dp"
+        android:paddingBottom="20dp"
+        android:paddingRight="20dp"
+        android:text="0"
+        android:textAlignment="textEnd"/>
+
+    <LinearLayout
+        android:id="@+id/memoryLane"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="MC"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="MR"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="M+"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="M-"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="MS"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/genericButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:columnCount="4">
+
+
+        <Button
+            android:layout_column="2"
+            android:text="C" />
+
+        <Button
+            android:layout_column="3"
+            android:text="/" />
+
+        <Button android:text="1" />
+
+        <Button android:text="2" />
+
+        <Button android:text="3" />
+
+        <Button android:text="*" />
+
+        <Button android:text="4" />
+
+        <Button android:text="5" />
+
+        <Button android:text="6" />
+
+        <Button android:text="-" />
+
+        <Button android:text="7" />
+
+        <Button android:text="8" />
+
+        <Button android:text="9" />
+
+        <Button
+            android:layout_rowSpan="3"
+            android:layout_gravity="fill"
+            android:text="+" />
+
+        <Button
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill"
+            android:text="0" />
+
+        <Button android:text="00" />
+
+        <Button
+            android:layout_columnSpan="3"
+            android:layout_gravity="fill"
+            android:text="=" />
+    </GridLayout>
+</LinearLayout>
