@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">Calculadora</string>
+    <string name="visualizador">0</string>
+    <string name="memoria_borrar">MC</string>
+    <string name="memoria_recuperar">MR</string>
+    <string name="memoria_sumar">M+</string>
+    <string name="memoria_restar">M-</string>
+    <string name="memoria_guardar">MS</string>
+    <string name="limpiar">C</string>
+    <string name="dividir">/</string>
+    <string name="multiplicar">*</string>
+    <string name="uno">1</string>
+    <string name="dos">2</string>
+    <string name="tres">3</string>
+    <string name="cuatro">4</string>
+    <string name="cinco">5</string>
+    <string name="seis">6</string>
+    <string name="restar">-</string>
+    <string name="siete">7</string>
+    <string name="ocho">8</string>
+    <string name="nueve">9</string>
+    <string name="sumar">+</string>
+    <string name="cero">0</string>
+    <string name="doble_cero">00</string>
+    <string name="resultado">=</string>
 </resources>
