@@ -39,35 +39,55 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void dividir(View view){
+        if (num_operacion != 0){
+            resultado(view);
+            visualizador.setText(String.valueOf(buffer));
+        } else {
+            visualizador.setText("0");
+        }
+
         num_anterior = buffer;
         buffer = 0;
         num_operacion = 1;
-
-        visualizador.setText(String.valueOf(buffer));
     }
 
     public void multiplicar(View view){
+        if (num_operacion != 0){
+            resultado(view);
+            visualizador.setText(String.valueOf(buffer));
+        } else {
+            visualizador.setText("0");
+        }
+
         num_anterior = buffer;
         buffer = 0;
         num_operacion = 2;
-
-        visualizador.setText(String.valueOf(buffer));
     }
 
     public void restar(View view){
+        if (num_operacion != 0){
+            resultado(view);
+            visualizador.setText(String.valueOf(buffer));
+        } else {
+            visualizador.setText("0");
+        }
+
         num_anterior = buffer;
         buffer = 0;
         num_operacion = 3;
-
-        visualizador.setText(String.valueOf(buffer));
     }
 
     public void sumar(View view){
+        if (num_operacion != 0){
+            resultado(view);
+            visualizador.setText(String.valueOf(buffer));
+        } else {
+            visualizador.setText("0");
+        }
+
         num_anterior = buffer;
         buffer = 0;
         num_operacion = 4;
-
-        visualizador.setText(String.valueOf(buffer));
     }
 
     public void resultado(View view){
@@ -99,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
         num_operacion = 0;
         buffer = 0;
 
-        visualizador.setText(String.valueOf(buffer));
+        visualizador.setText("0");
     }
 
     public void borrar_memoria(View view){
